@@ -45,12 +45,6 @@ function validateForm(event) {
         isValid = false;
     }
 
-    if (!document.querySelector('input[name="question5"]:checked')) {
-        document.getElementById('question5Error').textContent = "This question is required.";
-        document.getElementById('question5Error').style.display = 'inline';
-        isValid = false;
-    }
-
     // Show success message if all fields are valid
     if (isValid) {
         document.getElementById('successMessage').textContent = "Information entered successfully!";
